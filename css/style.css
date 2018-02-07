@@ -37,12 +37,12 @@ body {
 }
 
 a {
-    color: #f5c931;
+    color: #0000ff;
 }
 
 a:hover,
 a:focus {
-    color: #f5c931;
+    color: #000000;
 }
 
 h1 {
@@ -80,16 +80,16 @@ h5 {
 }
 
 p {
-    color: #959094;
+    color: #000000;
 }
 
 p.lead {
-    color: #f5c931;
+    color: #0000ff;
     margin-bottom: 2rem;
 }
 
 .text-primary {
-    color: #f5c931 !important;
+    color: #0000ff !important;
 }
 
 .light-font {
@@ -105,7 +105,7 @@ p.lead {
 }
 
 .btn-outline-light:hover {
-    color: #f5c931;
+    color: #0000ff;
 }
 
 .btn-primary {
@@ -118,6 +118,7 @@ p.lead {
     font-weight: 500;
     padding: 0.6rem 2rem;
     border: 0;
+    color: #000;
 }
 
 .btn-primary:hover,
@@ -128,7 +129,7 @@ p.lead {
 .show>.btn-primary.dropdown-toggle {
     background-image: linear-gradient( 122deg, #f5c931 0%, #FFA000 100%);
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.3);
-    color: #FFF;
+    color: #000;
 }
 
 .btn-light {
@@ -163,8 +164,8 @@ p.lead {
 }
 
 .section-title small {
-    color: #ffffff;
-    text-shadow: 2px 2px 2px #7a767a
+    color: #000000;
+    //text-shadow: 2px 2px 2px #7a767a
 }
 
 @media (max-width:767px) {
@@ -209,6 +210,7 @@ p.lead {
     position: relative;
 }
 
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1rem;
@@ -246,10 +248,10 @@ header {
 }
 
 .bg-gradient {
-    background-image: -moz-linear-gradient( 135deg, #0000ff 0%, #6a6af3 100%);
-    background-image: -webkit-linear-gradient( 135deg, #0000ff 0%, #6a6af3 100%);
-    background-image: -ms-linear-gradient( 135deg, #0000ff 0%, #6a6af3 100%);
-    background-image: linear-gradient( 135deg, #0000ff 0%, #6a6af3 100%);
+    background-image: -moz-linear-gradient( 135deg, #451280 0%, #0000ff 100%);
+    background-image: -webkit-linear-gradient( 135deg, #451280 0%, #0000ff 100%);
+    background-image: -ms-linear-gradient( 135deg, #451280 0%, #0000ff 100%);
+    background-image: linear-gradient( 135deg, #451280 0%, #0000ff 100%);
 }
 
 .tagline {
@@ -333,6 +335,15 @@ header {
     -moz-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
     -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);
+    background-image: -moz-linear-gradient( 122deg, #f5c931 0%, #ffb300 100%);
+    background-image: -webkit-linear-gradient( 122deg, #f5c931 0%, #ffb300 100%);
+    background-image: -ms-linear-gradient( 122deg, #f5c931 0%, #ffb300 100%);
+    background-image: linear-gradient( 122deg, #f5c931 0%, #ffb300 100%);
+    color: #000;
+}
+
+.card.features:hover .card-title {
+    color: #000;
 }
 
 .box-icon {
@@ -370,12 +381,12 @@ header {
 }
 
 .ui-steps li:hover .circle-icon {
-    background-image: -moz-linear-gradient( 122deg, #0000ff 0%, #3c3cf7 100%);
-    background-image: -webkit-linear-gradient( 122deg, #0000ff 0%, #3c3cf7 100%);
-    background-image: -ms-linear-gradient( 122deg, #0000ff 0%, #3c3cf7 100%);
-    background-image: linear-gradient( 122deg, #0000ff 0%, #3c3cf7 100%);
+    background-image: -moz-linear-gradient( 122deg, #f5c931 0%, #ffb300 100%);
+    background-image: -webkit-linear-gradient( 122deg, #f5c931 0%, #ffb300 100%);
+    background-image: -ms-linear-gradient( 122deg, #f5c931 0%, #ffb300 100%);
+    background-image: linear-gradient( 122deg, #f5c931 0%, #ffb300 100%);
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.09);
-    color: #FFF;
+    color: #000;
 }
 
 .ui-steps li {
@@ -588,6 +599,7 @@ header {
     text-align: center;
     color: #FFF;
     margin: 3rem 0;
+    text-rendering: optimizeLegibility;
 }
 
 .call-to-action .box-icon {
@@ -605,7 +617,7 @@ header {
 .call-to-action .tagline {
     font-size: 16px;
     font-weight: 300;
-    color: rgb(224, 227, 242);
+    color: #ffffff;
     max-width: 650px;
     margin: 0 auto;
 }
@@ -613,6 +625,10 @@ header {
 .btn-light img {
     margin-right: 0.4rem;
     vertical-align: text-bottom;
+}
+
+.call-to-action small {
+    color: #ffffff;
 }
 
 
@@ -633,14 +649,14 @@ header {
     line-height: 50px;
     margin: 0 0.3rem;
     border-radius: 5px;
-    color: #f5c931;
+    color: #0000ff;
     transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
     text-decoration: none;
     background-color: #f5c931;
-    color: #fff;
+    color: #000000;
 }
 
 @media (max-width:991px) {
